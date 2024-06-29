@@ -1,0 +1,13 @@
+{
+  "name": "kinetic-reforestation",
+  "version": "1.0.0",
+  "factorio_version": "1.1",
+  "title": "Kinetic Reforestation",
+  "author": "Maxreader",
+  "description": "Trees delivered via shotgun.",
+  "dependencies": [
+    "? angelsbioprocessing >= 0.7.21",
+    "? alien-biomes",
+    "? base"
+  ]
+}
