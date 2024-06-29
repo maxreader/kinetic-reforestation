@@ -28,8 +28,8 @@ data:extend{
         results = {{type = "item", name = "kinetic-reforestation-tree-shotgun", amount = 1}},
         ingredients = {
             {type = "item", name = "shotgun", amount = 1},
-            {type = "item", name = "electronic-circuit", amount = 5},
-            {type = "item", name = "iron-gear-wheel", amount = 10},
+            {type = "item", name = "steel-plate", amount = 1},
+            {type = "item", name = "iron-gear-wheel", amount = 5},
         },
         enabled = false
     } --[[@as data.RecipePrototype]],{

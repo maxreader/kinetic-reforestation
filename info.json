@@ -4,10 +4,11 @@
   "factorio_version": "1.1",
   "title": "Kinetic Reforestation",
   "author": "Maxreader",
-  "description": "Trees delivered via shotgun.",
+  "description": "Trees delivered via unconventional methods.",
   "dependencies": [
     "? angelsbioprocessing >= 0.7.21",
     "? alien-biomes",
     "? base"
-  ]
+  ],
+  "package": {"ignore": ["tree-shotgun.blend","tree-shotgun.blend1"]}
 }

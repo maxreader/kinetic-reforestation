@@ -78,7 +78,7 @@ data:extend{
     {
       type = "projectile",
       name = "ke-artillery-bomb-wave",
-      flags = {"not-on-map"},
+      flags = {"not-on-map"}--[[@as data.EntityPrototypeFlags]],
       acceleration = 0,
       speed_modifier = { 1.0, 0.707 },
       action =
@@ -136,7 +136,8 @@ data:extend{
       {
         {"rocket-control-unit", 10},
         {"explosives", 100},
-        {kinetic_reforestation.tree_ingredient, 1200}
+        {kinetic_reforestation.tree_ingredient, 1200},
+        {"steel-plate", 10}
       },
       result = "ke-artillery-shell"
     },{

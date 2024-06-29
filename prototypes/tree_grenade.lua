@@ -83,7 +83,7 @@ data:extend{
     },{
         type = "projectile",
         name = "kinetic-reforestation-tree-grenade",
-        flags = {"not-on-map"},
+        flags = {"not-on-map"}--[[@as data.EntityPrototypeFlags]],
         acceleration = 0.005,
         action = {
             {

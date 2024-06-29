@@ -13,7 +13,7 @@ if kinetic_reforestation.tree_ingredient=="kinetic-reforestation-tree-seed" then
     for tree_name, tree in pairs(data.raw.tree) do
         local results={}
         if tree.minable and tree.minable.results then
-            results=table.deepcopy(tree.minable.results)
+            results=table.deepcopy(tree.minable.results) --[[@as data.ProductPrototype]]
         else
             results={{type="item",name="wood",amount=4}}
         end
