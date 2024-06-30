@@ -1,6 +1,6 @@
 {
   "name": "kinetic-reforestation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "factorio_version": "1.1",
   "title": "Kinetic Reforestation",
   "author": "Maxreader",
@@ -10,5 +10,5 @@
     "? alien-biomes",
     "? base"
   ],
-  "package": {"ignore": ["tree-shotgun.blend","tree-shotgun.blend1"]}
+  "package": {"ignore": ["graphics/tree-shotgun.blend","graphics/tree-shotgun.blend1"]}
 }
