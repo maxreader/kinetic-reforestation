@@ -94,6 +94,7 @@ local function choose_tree(target_position,surface,player)
     if player.mod_settings["kinetic-reforestation-selection-mode"].value=="heavy" then
         probabilities=check_tile_properties(surface,target_position)
         for k,v in reverseIPairs(probabilities) do
+            if lib.exclude_tree(v.tree) then table.remove(probabilities,k) end
             if isNan(v.weight) then table.remove(probabilities,k) end
         end
     else
@@ -104,7 +105,9 @@ local function choose_tree(target_position,surface,player)
         local elevation=properties["elevation"][1]
         probabilities=get_cached_tree_probabilities(water,temperature,aux,elevation)
     end
-    if not next(probabilities) then return global.last_tree end
+    if not next(probabilities) then
+        if player.mod_settings["kinetic-reforestation-use-last-tree"].value==true then return global.last_tree end
+    end
     local selected_tree=select_tree_from_probabilities(probabilities)
     if selected_tree~=nil then global.last_tree=selected_tree end
     return selected_tree

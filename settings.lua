@@ -20,6 +20,11 @@ data:extend{{
     default_value=" "
 },{
     type="bool-setting",
+    name="kinetic-reforestation-use-last-tree",
+    setting_type="runtime-per-user",
+    default_value=true
+},{
+    type="bool-setting",
     name="kinetic-reforestation-disable-particles",
     setting_type="runtime-global",
     allow_blank=false,
@@ -30,5 +35,11 @@ data:extend{{
     setting_type="startup",
     allow_blank=false,
     default_value=false
+},{
+    type="string-setting",
+    name="kinetic-reforestation-tree-disable-list",
+    setting_type="startup",
+    allow_blank=true,
+    default_value=mods["alien-biomes"] and "tree-volcanic-a" or  " "
 }
 }

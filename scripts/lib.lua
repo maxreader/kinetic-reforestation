@@ -22,6 +22,7 @@ function lib.exclude_tree(name)
     elseif name=="swamp-tree" then return true
     elseif name=="temperate-tree" then return true
     elseif name=="desert-tree" then return true
+    elseif string.find(settings.startup["kinetic-reforestation-tree-disable-list"].value --[[@as string]],name) then return true
     end
     return false
 end

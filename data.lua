@@ -19,7 +19,8 @@ require("__kinetic-reforestation__/prototypes/tree_grenade.lua")
 require("__kinetic-reforestation__/prototypes/artillery_bomb")
 
 if mods["angelsbioprocessing"]~=nil then
-    data.raw["technology"]["kinetic-reforestation"].prerequisites={"bio-arboretum-1"}
+    data.raw["technology"]["kinetic-reforestation"].prerequisites={"bio-arboretum-1","steel-processing","military"}
     data.raw["item-subgroup"]["kinetic-reforestation"].group="bio-processing-nauvis"
+    data.raw["item-subgroup"]["kinetic-reforestation"].order="y"
 end
 
