@@ -3,17 +3,25 @@ local ke_artillery_cannon=table.deepcopy(data.raw.gun["artillery-wagon-cannon"])
 local ke_artillery_shell=table.deepcopy(data.raw.ammo["artillery-shell"])
 local ke_artillery_remote=table.deepcopy(data.raw.capsule["artillery-targeting-remote"])
 local ke_artillery_flare=table.deepcopy(data.raw["artillery-flare"]["artillery-flare"])
+local ke_artillery_turret_remnants=table.deepcopy(data.raw.corpse["artillery-turret-remnants"])
 local ke_artillery_ammo_category={
     type="ammo-category",
     name="ke-artillery-shell"
 }
+
 ke_artillery_turret.name="ke-artillery-turret"
 ke_artillery_turret.gun="ke-artillery-cannon"
 ke_artillery_turret.minable.result="ke-artillery-turret"
 ke_artillery_turret.disable_automatic_firing=true
 ke_artillery_turret.icon="__kinetic-reforestation__/graphics/artillery-turret-icon.png"
 ke_artillery_turret.base_picture.layers[1].filename="__kinetic-reforestation__/graphics/artillery-turret-base.png"
-ke_artillery_turret.base_picture.layers[1].filename="__kinetic-reforestation__/graphics/artillery-turret-base-hr.png"
+ke_artillery_turret.base_picture.layers[1].hr_version.filename="__kinetic-reforestation__/graphics/artillery-turret-base-hr.png"
+ke_artillery_turret.corpse="ke-artillery-turret-remnants"
+
+ke_artillery_turret_remnants.name="ke-artillery-turret-remnants"
+ke_artillery_turret_remnants.icon="__kinetic-reforestation__/graphics/artillery-turret-icon.png"
+ke_artillery_turret_remnants.animation[1].filename="__kinetic-reforestation__/graphics/artillery-turret-remnants.png"
+ke_artillery_turret_remnants.animation[1].hr_version.filename="__kinetic-reforestation__/graphics/hr-artillery-turret-remnants.png"
 
 ke_artillery_cannon.name="ke-artillery-cannon"
 ke_artillery_cannon.attack_parameters.ammo_category="ke-artillery-shell"
@@ -59,6 +67,7 @@ local ke_artillery_projectile=require("__kinetic-reforestation__/prototypes/arti
 
 data:extend{
     ke_artillery_turret,
+    ke_artillery_turret_remnants,
     ke_artillery_cannon,
     ke_artillery_shell,
     ke_artillery_remote,
