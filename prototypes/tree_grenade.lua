@@ -25,7 +25,7 @@ data:extend{
         energy_required = 10,
         results = {{type = "item", name = "kinetic-reforestation-tree-grenade", amount = 1}},
         ingredients = {
-            {type = "item", name = kinetic_reforestation.tree_ingredient, amount = 100},
+            {type = "item", name = kinetic_reforestation.tree_ingredient, amount = 50},
             {type = "item", name = "explosives", amount = 10},
             {type = "item", name = "steel-plate", amount = 5},
         },
