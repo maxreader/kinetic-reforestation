@@ -100,7 +100,7 @@ data:extend{
             },
             {
             type = "cluster",
-            cluster_count = 20,
+            cluster_count = 10,
             distance = 2,
             distance_deviation = 1,
             action_delivery =
@@ -114,7 +114,7 @@ data:extend{
             },
             {
             type = "cluster",
-            cluster_count = 30,
+            cluster_count = 15,
             distance = 3,
             distance_deviation = 2,
             action_delivery =
@@ -128,7 +128,7 @@ data:extend{
             },
             {
             type = "cluster",
-            cluster_count = 50,
+            cluster_count = 25,
             distance = 5,
             distance_deviation = 3,
             action_delivery =

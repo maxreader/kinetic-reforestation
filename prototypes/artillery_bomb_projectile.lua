@@ -68,7 +68,7 @@ if settings.startup["kinetic-reforestation-disable-nuke-effects"].value==true th
                 target_entities = false,
                 trigger_from_target = true,
                 repeat_count = 150,
-                radius = 15,
+                radius = 20,
                 action_delivery =
                 {
                   type = "projectile",
